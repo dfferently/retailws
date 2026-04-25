@@ -1,11 +1,66 @@
+# Create app
 
-  # Create app
+This is a code bundle for Create app. The original project is available at https://www.figma.com/design/zqVdS1QzxrV5GDLobUwUXo/Create-app.
 
-  This is a code bundle for Create app. The original project is available at https://www.figma.com/design/zqVdS1QzxrV5GDLobUwUXo/Create-app.
+## Prerequisites
 
-  ## Running the code
+Before you start, make sure you have installed:
 
-  Run `npm i` to install the dependencies.
+- **Node.js 20 LTS** (recommended)
+- **npm** (comes with Node.js)
 
-  Run `npm run dev` to start the development server.
-  
+## Run from scratch
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+3. Open the app in your browser:
+
+   ```text
+   http://localhost:5173
+   ```
+
+## Production check
+
+Build the project for production:
+
+```bash
+npm run build
+```
+
+## Troubleshooting
+
+### Error: `Cannot find module 'react'` / `Cannot find module 'react-dom'`
+
+This usually means dependencies were not installed correctly.
+
+Run:
+
+```bash
+npm install
+```
+
+### Dependency conflict: clean install
+
+If you have dependency conflicts or corrupted local modules:
+
+1. Remove installed modules and lockfile:
+
+   ```bash
+   rm -rf node_modules package-lock.json
+   ```
+
+2. Reinstall dependencies:
+
+   ```bash
+   npm install
+   ```
