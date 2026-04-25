@@ -6,6 +6,16 @@ This is a code bundle for Create app. The original project is available at https
 
 This project is **npm-only**. Use npm for dependency installation and scripts to keep `package-lock.json` authoritative.
 
+## Quick Start
+
+Use the app only through the Vite dev server:
+
+`npm install` → `npm run dev` → open `http://localhost:5173`
+
+> ⚠️ Не открывать `index.html` напрямую из проводника.
+>
+> Запуск через `file://.../index.html` **не поддерживается**. Entry point for Vite remains `/src/main.tsx` in `index.html`.
+
 ## Running the code
 
 Run `npm install` to install the dependencies.
