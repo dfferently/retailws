@@ -16,12 +16,13 @@ export const MobileLayout: React.FC = () => {
       </main>
 
       {/* Navigation Bar */}
-    <nav className="fixed bottom-6 left-6 right-6 h-20 bg-black/40 backdrop-blur-3xl border border-white/10 rounded-[2.5rem] flex items-center justify-around z-50 shadow-2xl shrink-0">
-      <NavItem to="/" icon={<Sword size={24} />} label="Raid" />
-      <NavItem to="/shop" icon={<ShoppingBag size={24} />} label="Shop" />
-      <NavItem to="/clan" icon={<Users size={24} />} label="Clan" />
-      <NavItem to="/profile" icon={<User size={24} />} label="Profile" />
-    </nav>
+      <nav className="fixed bottom-6 left-6 right-6 h-20 bg-black/40 backdrop-blur-3xl border border-white/10 rounded-[2.5rem] flex items-center justify-around z-50 shadow-2xl shrink-0">
+        <NavItem to="/" icon={<Sword size={24} />} label="Raid" />
+        <NavItem to="/shop" icon={<ShoppingBag size={24} />} label="Shop" />
+        <NavItem to="/clan" icon={<Users size={24} />} label="Clan" />
+        <NavItem to="/profile" icon={<User size={24} />} label="Profile" />
+      </nav>
+    </div>
   );
 };
 
